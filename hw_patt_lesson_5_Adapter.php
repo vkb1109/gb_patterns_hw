@@ -85,5 +85,4 @@ $russianBilliard -> shoot ();
 $russianBilliard -> win ();
 $russianBilliard -> loos ();
 print "Площадь шара: {$russianBilliard -> getBallArea()}.";
-
 ?>
