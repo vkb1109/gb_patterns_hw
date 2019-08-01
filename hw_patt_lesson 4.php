@@ -9,6 +9,7 @@
 //                                                              //
 //////////////////////////////////////////////////////////////////
 
+
 abstract class WindowCreater {
 
     abstract function createButton ();
@@ -20,7 +21,7 @@ abstract class ViewModalForm {
     abstract function view ();
 }
 
-class WindowsFactory extends WindowsCreater {
+class WindowsFactory extends WindowCreater {
     function createButton () {
         return "Windows Button";
     }
@@ -32,7 +33,7 @@ class WindowsFactory extends WindowsCreater {
     }
 }
 
-class MacOSFactory extends WindowsCreater {
+class MacOSFactory extends WindowCreater {
     function createButton () {
         return "MacOS Button";
     }
@@ -44,7 +45,7 @@ class MacOSFactory extends WindowsCreater {
     }
 }
 
-class BrowserFactory extends WindowsCreater {
+class BrowserFactory extends WindowCreater {
     function createButton () {
         return "Browser Button";
     }
