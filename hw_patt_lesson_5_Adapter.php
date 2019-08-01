@@ -27,7 +27,7 @@ class PoolParty implements Billiards{
 }
 
 class RussianBilliard {
-    private $sqArea = 8;
+    const SQ_AREA = 8;
 
     public function udarit () {
         echo "Udarit tak podarit!<br>";
@@ -39,7 +39,7 @@ class RussianBilliard {
         echo "Glavnoe - uchastie.<br>";
     }
     public function getSqArea () {
-        return $this -> sqArea;
+        return self::SQ_AREA;
     }
 }
 
@@ -84,5 +84,5 @@ print "Русский бильярд: ...<br>";
 $russianBilliard -> shoot ();
 $russianBilliard -> win ();
 $russianBilliard -> loos ();
-print "Площадь шара: {$russianBilliard -> getBallArea()}.";
+print "Площадь шара: {$russianBilliard -> getBallArea ()}.";
 ?>
